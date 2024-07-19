@@ -1,0 +1,76 @@
+@use '../index' as *;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    transition: .4s linear;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+    overflow-x: hidden;
+    color: $black;
+    line-height: 1.4;
+
+    @media (width < 576px) {
+        font-size: 85%;
+      }
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-transform: capitalize;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: $royalBlue;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+section{
+    padding: 70px 0;
+}
+
+
+.fixed__btn{
+    background-color: $orange;
+    color: white;
+    padding: 1.2rem 1.8rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 0px 50px 50px 0px;
+    @include positioning(fixed, auto, 2rem, 2rem, auto);
+
+    &:hover{
+        color: $royalBlue;
+    }
+}
+
+
+
+// .col-lg-4{
+//     flex: 0 0 auto;
+//     width: 33.3333333%;
+// }
+
+
+// @media(width < 992px){
+//     .col-md-6{
+//         flex: 0 0 auto;
+//         width: 50%;
+//     }
+// }

@@ -1,0 +1,25 @@
+@use '../index' as *;
+
+.topnav{
+    background-color: #061f36;
+    height: 5vh;
+    line-height: 5vh;
+
+    &__wrapper{
+        display: flex;
+        gap: 1.5rem;
+        color: white;
+
+        .topnav__item{
+            i{
+                color: $orange;
+                margin-right: 7px;
+                font-size: 1.2rem;
+            }
+
+            a{
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+@use './animations.scss' as *;
+
+
+/*-----------------------------
+PARTIALS
+-----------------------------*/ 
+@use 'partials/default';
+@use 'partials/topnav';
+@use 'partials/nav';
+@use 'partials/hero';
+@use 'partials/feature';
+
+
+

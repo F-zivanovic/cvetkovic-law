@@ -1,0 +1,244 @@
+.text-royalBlue {
+  color: #0A2D4E;
+}
+
+.bg-royalBlue {
+  background-color: #0A2D4E;
+}
+
+.text-lightBlue {
+  color: #C7DEF2;
+}
+
+.bg-lightBlue {
+  background-color: #C7DEF2;
+}
+
+.text-orange {
+  color: #FF7A00;
+}
+
+.bg-orange {
+  background-color: #FF7A00;
+}
+
+.text-black {
+  color: #0B0A0B;
+}
+
+.bg-black {
+  background-color: #0B0A0B;
+}
+
+/*-----------------------------
+PARTIALS
+-----------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: 0.4s linear;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  overflow-x: hidden;
+  color: #0B0A0B;
+  line-height: 1.4;
+}
+@media (width < 576px) {
+  body {
+    font-size: 85%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  color: #0A2D4E;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+section {
+  padding: 70px 0;
+}
+
+.fixed__btn {
+  background-color: #FF7A00;
+  color: white;
+  padding: 1.2rem 1.8rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  border-radius: 0px 50px 50px 0px;
+  position: fixed;
+  top: auto;
+  right: 2rem;
+  bottom: 2rem;
+  left: auto;
+  width: auto;
+  height: auto;
+}
+.fixed__btn:hover {
+  color: #0A2D4E;
+}
+
+.topnav {
+  background-color: #061f36;
+  height: 5vh;
+  line-height: 5vh;
+}
+.topnav__wrapper {
+  display: flex;
+  gap: 1.5rem;
+  color: white;
+}
+.topnav__wrapper .topnav__item i {
+  color: #FF7A00;
+  margin-right: 7px;
+  font-size: 1.2rem;
+}
+.topnav__wrapper .topnav__item a {
+  color: white;
+}
+
+.nav {
+  background-color: #0A2D4E;
+  height: 10vh;
+  line-height: 10vh;
+}
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 0;
+}
+.nav__wrapper .logo {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.nav__wrapper .nav__list {
+  display: flex;
+  gap: 2rem;
+}
+.nav__wrapper .nav__list .list__item .list__link {
+  color: white;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.nav__wrapper .nav__list .list__item .list__link:hover {
+  color: #FF7A00;
+}
+
+.hero {
+  padding: 0;
+  background-image: linear-gradient(rgba(10, 45, 78, 0.6), rgba(10, 45, 78, 0.6)), url("../../assets/img/hero (6).jpg");
+  height: 85vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  gap: 0;
+}
+.hero__wrapper {
+  text-align: center;
+}
+.hero__wrapper h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #FF7A00;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+.hero__wrapper h3 {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+}
+.hero__wrapper p {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.hero__wrapper .hero__cta i {
+  color: #0A2D4E;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.hero__wrapper .hero__cta .hero__btn {
+  margin-left: -25px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 26px;
+  color: white;
+  background: #0A2D4E;
+  position: relative;
+  border-radius: 0px 50px 50px 0px;
+  z-index: 4;
+  margin-top: 1.2rem;
+}
+.hero__wrapper .hero__cta .hero__btn:hover {
+  background-color: #FF7A00;
+  color: white;
+}
+
+.feature {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-flow: row wrap;
+  gap: 2rem;
+  margin-top: -100px;
+}
+.feature__item {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.feature__item img {
+  width: 40px;
+}
+.feature__item h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.feature__item--orange {
+  background-color: #FF7A00;
+  flex: 2;
+  color: white;
+}
+.feature__item--orange p {
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+/*# sourceMappingURL=style.css.map */

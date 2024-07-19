@@ -1,0 +1,68 @@
+@use '../index' as *;
+
+.hero{
+    padding: 0;
+    background-image:linear-gradient(rgb(10, 45, 78,0.6), rgb(10, 45, 78,0.6)), url('../../assets/img/hero\ \(6\).jpg');
+    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    @include flex(center,center, column);
+
+    &__wrapper{
+        text-align: center;
+       
+        h1{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: $orange;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+        }
+
+        h3{
+            font-size: 3rem;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        p{
+            color: white;
+            font-weight: 500;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+
+        .hero__cta{
+
+            i{
+                color: $royalBlue;
+                background-color: white;
+                padding: 1rem;
+                border-radius: 50px;
+                position: relative;
+                z-index: 5;
+                box-shadow: 10px 2px 15px rgba(0,0,0,0.1);
+            }
+
+            .hero__btn{
+                margin-left: -25px;
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: 1px;
+                display: inline-block;
+                padding: 10px 26px;
+                color: white;
+                background: $royalBlue;
+                position: relative;
+                border-radius: 0px 50px 50px 0px;
+                z-index: 4;
+                margin-top: 1.2rem;
+
+                &:hover{
+                    background-color: $orange;
+                    color: white;
+                }
+            }
+        }
+    }
+}
