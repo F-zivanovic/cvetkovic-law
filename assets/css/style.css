@@ -6,6 +6,14 @@
   background-color: #0A2D4E;
 }
 
+.text-darkBlue {
+  color: #061f36;
+}
+
+.bg-darkBlue {
+  background-color: #061f36;
+}
+
 .text-lightBlue {
   color: #C7DEF2;
 }
@@ -294,7 +302,7 @@ section {
 }
 
 .cta {
-  background-color: #C7DEF2;
+  background-color: #061f36;
   text-align: center;
 }
 .cta h2 {
@@ -306,6 +314,7 @@ section {
   max-width: 550px;
 }
 .cta p {
+  color: #fff;
   font-weight: 500;
   font-size: 1.3rem;
   max-width: 850px;
@@ -352,6 +361,8 @@ section {
   align-items: center;
   flex-flow: wrap;
   gap: 1rem;
+  background-color: #061f36;
+  padding: 2rem;
 }
 .contact__wrapper .contact__item .contact__form .contact__group {
   flex: 0 0 45%;

@@ -1,7 +1,7 @@
 @use '../index' as *;
 
 .cta{
-    background-color: $lightBlue;
+    background-color: $darkBlue;
     text-align: center;
 
     h2{
@@ -14,6 +14,7 @@
     }
 
     p{
+        color: #fff;
         font-weight: 500;
         font-size: 1.3rem;
         max-width: 850px;

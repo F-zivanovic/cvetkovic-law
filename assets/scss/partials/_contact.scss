@@ -34,6 +34,8 @@
 
             .contact__form{
                 @include flex(space-between, center, wrap, 1rem);
+                background-color: $darkBlue;
+                padding: 2rem;
 
                 .contact__group{
                     flex: 0 0 45%;
