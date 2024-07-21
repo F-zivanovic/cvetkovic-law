@@ -19,12 +19,51 @@
             gap: 2rem;
 
             .list__item{
+
+                &.dropdown{
+                    @include flex(flex-start, center, nowrap, .5rem);
+                    position: relative;
+                    line-height: 1.4;
+
+                    i{
+                        color: white;
+                    }
+
+                    .nav__dropdown{
+                        position: absolute;
+                        top: 100%;
+                        background-color: $darkBlue;
+                        padding: 1rem;
+                        width: 220px;
+                        display: none;
+
+                        &__link{
+                            color: white;
+                            display: block;
+                            width: 100%;
+                            text-transform: capitalize;
+
+                            &:not(:last-child){
+                                margin-bottom: 1rem;
+                            }
+
+                            &:hover{
+                                color: $orange;
+                            }
+                        }
+                    }
+                }
+
                 .list__link{
                     color: white;
                     text-transform: capitalize;
                     font-size: 18px;
 
                     &:hover{
+                        color: $orange;
+                    }
+
+                    &:hover+i{
                         color: $orange;
                     }
                 }

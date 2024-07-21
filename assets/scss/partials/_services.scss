@@ -1,5 +1,31 @@
 @use '../index' as *;
 
 .services{
-    background-color: $royalBlue;
+    padding:0;
+
+    &__item{
+        padding: 70px 0;
+
+        .services__wrapper{
+            @include flex(flex-start, center, row wrap, 2rem);
+       
+            .services__img{
+                flex: 1;
+            }
+
+            .services__text{
+                flex: 2;
+
+                .section__title{
+                    text-align: left;
+                    margin-bottom: 1rem;
+                }
+    
+                p{
+                    color: white;
+                    line-height: 1.7;
+                }
+            }
+       }
+    }
 }
