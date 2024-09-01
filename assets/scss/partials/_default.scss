@@ -28,12 +28,15 @@ body{
 h1,h2,h3,h4,h5,h6{
     text-transform: capitalize;
     font-family: "Barlow Semi Condensed", sans-serif;
-    // color: $orange;
 }
 
 .container{
     width: 70%;
     margin: auto;
+
+    @media(width < 576px){
+        width: 80%;
+    }
 }
 
 img{

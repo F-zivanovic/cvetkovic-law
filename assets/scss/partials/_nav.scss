@@ -4,6 +4,7 @@
     background-color: $royalBlue;
     height: 10vh;
     line-height: 10vh;
+    position: relative;
 
     &__wrapper{
         @include flex(space-between, center);
@@ -17,6 +18,23 @@
         .nav__list{
             display: flex;
             gap: 2rem;
+            transition: 0s;
+
+            @media(width < 992px){
+                @include positioning(absolute, 100%, auto, auto, 0%);
+                background-color: red;
+                width: 100%;
+                // flex-direction: column;
+                line-height: 1.4;
+                padding: 1rem 15%;
+                gap: 1rem;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: .5s linear;
+            }
+
+            &.open{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+            }
 
             .list__item{
 
@@ -24,6 +42,10 @@
                     @include flex(flex-start, center, nowrap, .5rem);
                     position: relative;
                     line-height: 1.4;
+
+                    &:hover > .nav__dropdown{
+                        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+                    }
 
                     i{
                         color: white;
@@ -35,7 +57,7 @@
                         background-color: $darkBlue;
                         padding: 1rem;
                         width: 220px;
-                        display: none;
+                        clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
 
                         &__link{
                             color: white;
@@ -67,6 +89,22 @@
                         color: $orange;
                     }
                 }
+            }
+        }
+
+        #hamburger{
+            display: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.5rem;
+
+            &:hover{
+                color: $orange;
+            }
+
+            @media(width < 992px){
+                display: flex;
+                transition: 0;
             }
         }
     }

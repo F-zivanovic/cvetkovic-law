@@ -5,6 +5,10 @@
     height: 5vh;
     line-height: 5vh;
 
+    @media(width < 992px){
+        display: none;
+    }
+
     &__wrapper{
         display: flex;
         gap: 1.5rem;
@@ -13,14 +17,18 @@
         .topnav__item{
             display: inline-flex;
             align-items: center;
+            
             i{
                 color: $orange;
                 margin-right: 7px;
-                font-size: 1.3rem;
             }
 
             a{
                 color: white;
+
+                &:hover{
+                    color: $orange;
+                }
             }
         }
     }

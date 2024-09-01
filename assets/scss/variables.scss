@@ -12,7 +12,8 @@ $colors:(
     'darkBlue':#061f36,
     'lightBlue': #C7DEF2,
     'orange': #FF7A00,
-    'black':#0B0A0B
+    'black':#0B0A0B,
+    'white': #fff
 );
 
 @each $key, $value in $colors{
