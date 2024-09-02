@@ -1,18 +1,18 @@
 @use '../index' as *;
 
 .nav{
-    background-color: $royalBlue;
-    height: 10vh;
-    line-height: 10vh;
+    background-color: white;
     position: relative;
 
     &__wrapper{
         @include flex(space-between, center);
 
-        .logo{
-            color: white;
-            text-transform: uppercase;
-            font-size: 2rem;
+        .nav__logo{
+
+           img{
+             width: 200px;
+             height: 100px;
+           } 
         }
 
         .nav__list{
@@ -51,7 +51,7 @@
                     }
 
                     i{
-                        color: white;
+                        color: $darkBlue;
                     }
 
                     .nav__dropdown{
@@ -81,7 +81,7 @@
                 }
 
                 .list__link{
-                    color: white;
+                    color: $darkBlue;
                     text-transform: capitalize;
                     font-size: 18px;
 
@@ -98,7 +98,7 @@
 
         #hamburger{
             display: none;
-            color: white;
+            color: $darkBlue;
             cursor: pointer;
             font-size: 1.5rem;
 
