@@ -7,6 +7,10 @@
     &__wrapper{
         @include flex(space-between, flex-start, wrap, 2rem);
 
+        @media(width < 992px){
+            flex-direction: column;
+        }
+
         .footer__item{
 
             .footer__heading{

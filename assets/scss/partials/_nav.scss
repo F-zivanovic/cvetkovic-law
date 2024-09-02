@@ -19,12 +19,15 @@
             display: flex;
             gap: 2rem;
             transition: 0s;
+            align-items: center;
 
             @media(width < 992px){
+                align-items: flex-start;
+                z-index: 100;
                 @include positioning(absolute, 100%, auto, auto, 0%);
                 background-color: red;
                 width: 100%;
-                // flex-direction: column;
+                flex-direction: column;
                 line-height: 1.4;
                 padding: 1rem 15%;
                 gap: 1rem;
@@ -52,6 +55,7 @@
                     }
 
                     .nav__dropdown{
+                        margin-top: 1rem;
                         position: absolute;
                         top: 100%;
                         background-color: $darkBlue;

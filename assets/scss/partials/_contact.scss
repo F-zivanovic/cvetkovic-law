@@ -6,6 +6,11 @@
         margin: 3rem 0;
         @include flex(center, center, wrap, 2rem);
 
+        @media(width < 992px){
+            flex-direction: column;
+            align-items: stretch;
+         }
+
         &__item{
             border: 2px solid $orange;
             color: white;
@@ -14,20 +19,37 @@
             gap: 1rem;
             align-items: center;
 
+            @media(width < 576px){
+                padding: 1rem;
+            }
+
             i{
                 color: $orange;
                 font-size: 1.5rem;
+                
+                @media(width < 576px){
+                    font-size: 1rem;
+                }
             }
 
             h3{
                 margin-bottom: 0.5rem;
                 font-size: 1.5rem;
+                
+                @media(width < 576px){
+                    font-size: 1rem;
+                }
             }
         }
     }
 
     &__wrapper{
         @include flex(space-between, stretch, wrap);
+
+        @media(width < 1200px){
+           flex-direction: column;
+           gap: 2rem ;
+        }
 
         .contact__item{
             flex: 0 0 47%;
@@ -36,6 +58,11 @@
                 @include flex(space-between, center, wrap, 1rem);
                 background-color: $darkBlue;
                 padding: 2rem;
+   
+                @media(width < 576px){
+                    flex-direction: column;
+                    align-items: stretch;
+                }
 
                 .contact__group{
                     flex: 0 0 45%;
@@ -72,6 +99,10 @@
             .contact__map{
                 width: 100%;
                 height: 100%;
+
+                @media(width < 1200px){
+                    height: 350px;
+                 }
             }
         }
     }
