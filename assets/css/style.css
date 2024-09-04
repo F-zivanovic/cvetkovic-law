@@ -688,6 +688,15 @@ section {
     flex-direction: column;
   }
 }
+.footer__wrapper .footer__item .footer__logo img {
+  width: 300px;
+  height: 100px;
+}
+@media (width < 576px) {
+  .footer__wrapper .footer__item .footer__logo img {
+    width: 200px;
+  }
+}
 .footer__wrapper .footer__item .footer__heading {
   color: #FF7A00;
   text-transform: uppercase;
