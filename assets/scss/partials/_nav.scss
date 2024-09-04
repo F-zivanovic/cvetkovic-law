@@ -10,16 +10,18 @@
         .nav__logo{
 
            img{
-             width: 200px;
+             width: 300px;
              height: 100px;
+
+             @media(width < 576px){
+                width: 200px;
+             }
            } 
         }
 
         .nav__list{
-            display: flex;
-            gap: 2rem;
+            @include flex(flex-start, center, row, 2rem);
             transition: 0s;
-            align-items: center;
 
             @media(width < 992px){
                 align-items: flex-start;

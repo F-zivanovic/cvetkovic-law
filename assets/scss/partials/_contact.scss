@@ -13,11 +13,9 @@
 
         &__item{
             border: 2px solid $orange;
-            color: white;
             padding: 2rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
+            color: white;
+            @include flex(flex-start, center, row, 1rem);
 
             @media(width < 576px){
                 padding: 1rem;
@@ -35,6 +33,7 @@
             h3{
                 margin-bottom: 0.5rem;
                 font-size: 1.5rem;
+              
                 
                 @media(width < 576px){
                     font-size: 1rem;
@@ -55,21 +54,15 @@
             flex: 0 0 47%;
 
             .contact__form{
-                @include flex(space-between, center, wrap, 1rem);
                 background-color: $darkBlue;
                 padding: 2rem;
-   
-                @media(width < 576px){
-                    flex-direction: column;
-                    align-items: stretch;
-                }
 
                 .contact__group{
-                    flex: 0 0 45%;
 
                     label{
                         display: block;
                         color: $lightBlue;
+                        margin-bottom: .2rem;
                     }
 
                     input{
@@ -79,6 +72,7 @@
                         background: transparent ;
                         border: 1px solid $orange;
                         font-size: 1rem;
+                        margin-bottom: 1rem;
                     }
 
                     &--text{
@@ -91,6 +85,7 @@
                             width: 100%;
                             height: 100px;
                             padding: .4rem;
+                            margin-bottom: 1rem;
                         }
                     }
                 }
