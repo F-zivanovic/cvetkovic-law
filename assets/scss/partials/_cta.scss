@@ -41,6 +41,7 @@
         border: 2px solid $orange;
         position: relative;
         z-index: 100;
+        color: white;
 
         &:hover::after{
             width: 100%;

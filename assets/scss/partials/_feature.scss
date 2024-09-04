@@ -26,9 +26,10 @@
         }
 
         &--orange{
-            background-color: $orange;
+            background-color: #FF7A00;
             flex: 2;
-            color: white;
+            color: $darkBlue;
+            font-weight: bold;
 
             @media(width < 1200px){
                 flex: 0 0 100%;

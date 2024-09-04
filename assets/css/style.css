@@ -111,7 +111,7 @@ section {
 
 .btn {
   background-color: #FF7A00;
-  color: white;
+  color: #061f36;
   font-size: 18px;
   text-transform: capitalize;
   line-height: 1.2rem;
@@ -121,7 +121,7 @@ section {
   display: inline-block;
 }
 .btn:hover {
-  color: #0A2D4E;
+  background-color: white;
 }
 @media (width < 576px) {
   .btn {
@@ -132,7 +132,7 @@ section {
 
 .fixed__btn {
   background-color: #FF7A00;
-  color: white;
+  color: #061f36;
   padding: 1.2rem 1.8rem;
   text-transform: capitalize;
   font-weight: 500;
@@ -146,7 +146,7 @@ section {
   height: auto;
 }
 .fixed__btn:hover {
-  color: #0A2D4E;
+  background-color: white;
 }
 @media (width < 768px) {
   .fixed__btn {
@@ -424,7 +424,8 @@ section {
 .feature__item--orange {
   background-color: #FF7A00;
   flex: 2;
-  color: white;
+  color: #061f36;
+  font-weight: bold;
 }
 @media (width < 1200px) {
   .feature__item--orange {
@@ -549,6 +550,7 @@ section {
   border: 2px solid #FF7A00;
   position: relative;
   z-index: 100;
+  color: white;
 }
 .cta .cta__wrapper .cta__btn:hover::after {
   width: 100%;

@@ -60,7 +60,7 @@ section{
 
 .btn{
     background-color: $orange;
-    color: white;
+    color: $darkBlue;
     font-size: 18px;
     text-transform: capitalize;
     line-height: 1.2rem;
@@ -70,7 +70,7 @@ section{
     display: inline-block;
 
     &:hover{
-        color: $royalBlue;
+        background-color: white;
     }
 
     @media(width < 576px){
@@ -82,7 +82,7 @@ section{
 
 .fixed__btn{
     background-color: $orange;
-    color: white;
+    color: $darkBlue;
     padding: 1.2rem 1.8rem;
     text-transform: capitalize;
     font-weight: 500;
@@ -90,7 +90,7 @@ section{
     @include positioning(fixed, auto, 2rem, 2rem, auto);
 
     &:hover{
-        color: $royalBlue;
+        background-color: white;
     }
 
     @media(width < 768px){
