@@ -133,7 +133,7 @@ section {
 .fixed__btn {
   background-color: #FF7A00;
   color: #061f36;
-  padding: 1.2rem 1.8rem;
+  padding: 1rem 1.5rem;
   text-transform: capitalize;
   font-weight: 500;
   border-radius: 0px 50px 50px 0px;
@@ -150,15 +150,10 @@ section {
 }
 @media (width < 768px) {
   .fixed__btn {
-    padding: 1rem 1.5rem;
-    right: 1rem;
-    bottom: 1rem;
-  }
-}
-@media (width < 576px) {
-  .fixed__btn {
     padding: 1rem;
+    right: 1rem;
     font-size: 0.9rem;
+    bottom: 1rem;
   }
 }
 
@@ -308,9 +303,8 @@ section {
 }
 
 .hero {
-  padding: 0;
+  height: 700px;
   background-image: linear-gradient(rgba(10, 45, 78, 0.6), rgba(10, 45, 78, 0.6)), url("../../assets/img/hero (6).jpg");
-  height: 85vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -489,6 +483,11 @@ section {
 @media (width < 1200px) {
   .services__item .services__wrapper .services__img img {
     width: 300px;
+  }
+}
+@media (width < 768px) {
+  .services__item .services__wrapper .services__img img {
+    width: 200px;
   }
 }
 .services__item .services__wrapper .services__text {
