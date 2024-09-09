@@ -1,10 +1,11 @@
 @use '../index' as *;
 
 .about{
-    @include flex(flex-start, center, row wrap, 3rem);
+    @include flex(flex-start, stretch, row wrap, 3rem);
 
     .about__item{
           flex: 1 0 450px;
+          // border: 2px solid red;
           // width: 50%;
 
         h2{
@@ -21,9 +22,14 @@
             color: white;
           }
 
-          &--img{
-            background: url("../../assets/img/ivana.png") center no-repeat;
-            min-height: 500px;
+          img{
+            height: 100%;
+            aspect-ratio: 1/1;
           }
+
+          // &--img{
+          //   background: url("../../assets/img/ivana.png") center no-repeat;
+          //   height: 100%;
+          // }
     }
 }

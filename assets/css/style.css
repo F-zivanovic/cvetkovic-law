@@ -481,7 +481,7 @@ section {
 .about {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   flex-flow: row wrap;
   gap: 3rem;
 }
@@ -499,9 +499,9 @@ section {
   margin-top: 1rem;
   color: white;
 }
-.about .about__item--img {
-  background: url("../../assets/img/ivana.png") center no-repeat;
-  min-height: 500px;
+.about .about__item img {
+  height: 100%;
+  aspect-ratio: 1/1;
 }
 
 .services {
