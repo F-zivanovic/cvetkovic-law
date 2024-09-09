@@ -2,12 +2,15 @@
 
 .hero{
     height: 700px;
-    // padding: 0;
     background-image:linear-gradient(rgb(10, 45, 78,0.6), rgb(10, 45, 78,0.6)), url('../../assets/img/hero\ \(6\).jpg');
-    // height: 90vh;
     background-position: center;
     background-size: cover;
     @include flex(center,center, column);
+
+    @media (orientation:landscape) and (width < 768px){
+        height: 500px;
+        align-items: flex-start;
+    }
 
     &__wrapper{
         text-align: center;

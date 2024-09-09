@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
   vertical-align: middle;
 }
@@ -231,6 +231,7 @@ section {
     padding-left: 2rem;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: 0.4s linear;
+    overflow: auto;
   }
 }
 .nav__wrapper .nav__list.open {
@@ -345,6 +346,12 @@ section {
   align-items: center;
   flex-flow: column;
   gap: 0;
+}
+@media (orientation: landscape) and (width < 768px) {
+  .hero {
+    height: 500px;
+    align-items: flex-start;
+  }
 }
 .hero__wrapper {
   text-align: center;

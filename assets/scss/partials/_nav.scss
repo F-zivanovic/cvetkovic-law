@@ -32,9 +32,8 @@
                 padding-top: 2rem;
                 padding-left: 2rem;
                 clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-
-                // clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
-                transition: .4s linear
+                transition: .4s linear;
+                overflow: auto;
             }
 
             &.open{
