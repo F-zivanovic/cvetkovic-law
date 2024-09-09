@@ -346,6 +346,8 @@
     <!-- Contact section starts -->
     <section class="contact container" id="contact">
         <h2 class="section__title">Kontakt</h2>
+
+        <!-- Header starts -->
         <div class="contact__header">
             <article class="contact__header__item">
                 <i class="fa-solid fa-location-dot"></i>
@@ -362,31 +364,35 @@
                 </div>
             </article>
         </div>
+        <!-- Header ends -->
+
+        <!-- Main starts -->
         <div class="contact__wrapper">
             <article class="contact__item">
                 <form class="contact__form">
 
                     <div class="contact__group">
                         <label for="name">Ime*</label>
-                        <input type="text" id="name" required>
+                        <input type="text" id="name">
                     </div>
 
                     <div class="contact__group">
                         <label for="email">Email*</label>
-                        <input type="text" id="email" required>
+                        <input type="text" id="email">
                     </div>
 
                     <div class="contact__group">
                         <label for="subject">Naslov*</label>
-                        <input type="text" id="subject" required>
+                        <input type="text" id="subject">
                     </div>
 
-                    <div class="contact__group contact__group--text">
+                    <div class="contact__group">
                         <label for="message">Poruka (opciono)</label>
                         <textarea id="message"></textarea>
                     </div>
 
-                    <button class="contact__submit btn">Pošalji</button>
+                    <button class="contact__submit btn" type="submit">Pošalji</button>
+                    <p class="contact__msg"></p>
                 </form>
             </article>
             <article class="contact__item ">
@@ -396,6 +402,7 @@
                     class="contact__map"></iframe>
             </article>
         </div>
+        <!-- Main ends -->
     </section>
     <!-- Contact section ends -->
 
@@ -428,11 +435,11 @@
             <article class="footer__item">
                 <h3 class="footer__heading">Usluge</h3>
                 <ul class="footer__list">
-                    <li class="footer__list__item"><a href="#arbitraza" class="footer__link">arbitraza</a></li>
+                    <li class="footer__list__item"><a href="#arbitraza" class="footer__link">arbitraža</a></li>
                     <li class="footer__list__item"><a href="#medijacija" class="footer__link">medijacija</a></li>
                     <li class="footer__list__item"><a href="#radnopravo" class="footer__link">radno pravo</a></li>
                     <li class="footer__list__item"><a href="#mergers" class="footer__link">mergers</a></li>
-                    <li class="footer__list__item"><a href="#parnicni" class="footer__link">parnicni postupak</a></li>
+                    <li class="footer__list__item"><a href="#parnicni" class="footer__link">parnični postupak</a></li>
                     <li class="footer__list__item"><a href="#brak" class="footer__link">razvod braka</a></li>
                 </ul>
             </article>

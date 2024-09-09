@@ -108,6 +108,11 @@ section {
   letter-spacing: 0.5px;
   font-size: 2.5rem;
 }
+@media (width < 576px) {
+  .section__title {
+    font-size: 2rem;
+  }
+}
 
 .btn {
   background-color: #FF7A00;
@@ -690,13 +695,9 @@ section {
   padding: 0.4rem;
   background: transparent;
   border: 1px solid #FF7A00;
-  font-size: 1rem;
   margin-bottom: 1rem;
 }
-.contact__wrapper .contact__item .contact__form .contact__group--text {
-  flex: 0 0 100%;
-}
-.contact__wrapper .contact__item .contact__form .contact__group--text textarea {
+.contact__wrapper .contact__item .contact__form .contact__group textarea {
   background: transparent;
   border: 1px solid #FF7A00;
   color: #C7DEF2;
@@ -704,6 +705,11 @@ section {
   height: 100px;
   padding: 0.4rem;
   margin-bottom: 1rem;
+}
+.contact__wrapper .contact__item .contact__form .contact__msg {
+  color: #C7DEF2;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 .contact__wrapper .contact__item .contact__map {
   width: 100%;

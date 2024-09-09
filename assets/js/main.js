@@ -1,25 +1,64 @@
+// Open hamburger menu
 const hamburger = document.getElementById("hamburger");
-const navList = document.getElementById("nav__list");
-const navLinks = document.querySelectorAll(".list__link");
-
 
 hamburger.addEventListener('click', () =>{
-    navList.classList.toggle('open');
+    navList.classList.add('open');
 });
 
 
-
-// Open/close desktop services dropdown
-const desktopDropdown = document.querySelector('.dropdown');
-const navDropdown = document.querySelector('.dropdown > .nav__dropdown');
-
-desktopDropdown.addEventListener('click', ()=>{
-    navDropdown.classList.toggle('open__dropdown');
-})
-
-
-// Close Mobile menu
+// Close hamburger menu
+const navList = document.getElementById("nav__list");
 const closeIcon = document.getElementById('close');
+
 closeIcon.addEventListener('click', ()=>{
     navList.classList.remove('open');
 });
+
+
+// Close hamburger menu on width gratjer than 1200px
+window.addEventListener('resize', ()=>{
+
+    if(window.innerWidth > 1200){
+        navList.classList.remove('open');
+    }
+});
+
+
+// Form validation
+const sumbitBtn = document.querySelector('.contact__submit');
+const contactForm = document.querySelector('.contact__form');
+const contactMsg = contactForm.querySelector(".contact__msg");
+
+sumbitBtn.addEventListener("click", collectUserData);
+
+function collectUserData(e) {
+    e.preventDefault();
+
+    const inputs = contactForm.querySelectorAll('input');
+
+    const userData = {
+        name: inputs[0].value,
+        email: inputs[1].value,
+        message: inputs[2].value
+    }
+
+    validateContactForm(userData);
+}
+
+function validateContactForm(userData){
+
+    if(userData.name == '' || userData.email == '' || userData.message == ''){
+        contactMsg.innerHTML = 'Sva polja forme su obavezna';
+        return;
+    }
+
+    let emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!userData.email.match(emailFormat)) {
+        contactMsg.innerHTML = 'Unesite validan email';
+    }else{
+        contactMsg.innerHTML = 'Forma je uspešno poslata. Očekujte odgovor!';
+    }
+}
+
+
+
