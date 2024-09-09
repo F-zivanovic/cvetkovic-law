@@ -229,7 +229,7 @@ section {
     align-items: flex-start;
     padding-top: 2rem;
     padding-left: 2rem;
-    clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: 0.4s linear;
   }
 }
@@ -256,7 +256,6 @@ section {
   }
 }
 .nav__wrapper .nav__list .list__item.dropdown .nav__dropdown {
-  margin-top: 1rem;
   position: absolute;
   top: 100%;
   background-color: #061f36;

@@ -31,7 +31,9 @@
                 align-items: flex-start;
                 padding-top: 2rem;
                 padding-left: 2rem;
-                clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
+                clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+
+                // clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
                 transition: .4s linear
             }
 
@@ -58,7 +60,6 @@
                     }
 
                     .nav__dropdown{
-                        margin-top: 1rem;
                         position: absolute;
                         top: 100%;
                         background-color: $darkBlue;
@@ -77,6 +78,7 @@
                             margin: 0;
                             padding-left: 1rem;
                         }
+
 
                         &__link{
                             color: white;
