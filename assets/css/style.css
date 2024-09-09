@@ -501,7 +501,6 @@ section {
 }
 .about .about__item img {
   height: 100%;
-  aspect-ratio: 1/1;
 }
 
 .services {

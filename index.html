@@ -30,6 +30,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -103,7 +106,7 @@
 
     <!-- Hero section starts -->
     <section class="hero">
-        <div class="hero__wrapper container">
+        <div class="hero__wrapper container" data-aos="fade-down" data-aos-duration="2000">
             <p class="hero__h">Ivana Cvetković</p>
             <h1>Advokatska kancelarija Cvetković</h1>
             <p>Mi nudimo drugačiji pristup i efikasniju pravnu zaštitu</p>
@@ -128,19 +131,19 @@
                 troškova i suđenja koja traju predugo</p>
         </article>
         <article class="feature__item">
-            <img src="assets/img/feature1.png" alt="feature section image one">
+            <img src="assets/img/feature1.png" alt="feature section image one" width="40px" height="auto">
             <h3>Arbitraža</h3>
             <p class="feature__p">Arbitraža, kao način rešavanja sporova, je sve prisutnija u savremenom svetu</p>
         </article>
         <article class="feature__item">
-            <img src="assets/img/feature2.png" alt="feature section image two">
+            <img src="assets/img/feature2.png" alt="feature section image two" width="40px" height="auto">
             <h3>Medijacija</h3>
             <p class="feature__p">Medijacija, manje formalan način rešavanja sporova, je takođe sve više prisutna u
                 savremenom društvu
             </p>
         </article>
         <article class="feature__item">
-            <img src="assets/img/feature3.png" alt="feature section image three">
+            <img src="assets/img/feature3.png" alt="feature section image three" width="40px" height="auto">
             <h3>Radno pravo</h3>
             <p class="feature__p">Radno pravo, kao grana prava, je definisana zakonskim pozitivnim propisima</p>
         </article>
@@ -153,7 +156,7 @@
 
     <!-- About section starts -->
     <section class="about container" id="about">
-        <article class="about__item">
+        <article class="about__item" data-aos="zoom-in" data-aos-duration="1000">
             <h2 class="section__title">o nama</h2>
             <h3>Reč osnivača</h3>
             <p>Na samo početku ideja naše kancelarije je bila da uz poštovaje visokih standarda i pravne etike postanemo
@@ -195,7 +198,7 @@
                 nastaviti da budemo
                 posvećeni svom poslu i kreativni u nalaženju najboljih rešenja za naše klijente.</p>
         </article>
-        <article class="about__item about__item--img">
+        <article class="about__item about__item--img" data-aos="zoom-in" data-aos-duration="1000">
             <img src="assets/img/ivana.png" alt="Ivana Cvetkovic">
         </article>
     </section>
@@ -207,7 +210,7 @@
 
     <!-- Services section starts -->
     <section class="services" id="services">
-        <article class="services__item bg-darkBlue" id="arbitraza">
+        <article class="services__item bg-darkBlue" id="arbitraza" data-aos="fade-up">
             <div class="services__wrapper container">
                 <div class="services__img">
                     <img src="assets/img/services1.png" alt="services img one">
@@ -226,7 +229,7 @@
                 </div>
             </div>
         </article>
-        <article class="services__item bg-royalBlue" id="medijacija">
+        <article class="services__item bg-royalBlue" id="medijacija" data-aos="fade-up">
             <div class="services__wrapper container">
                 <div class="services__img">
                     <img src="assets/img/services2.png" alt="services img two">
@@ -245,7 +248,7 @@
                 </div>
             </div>
         </article>
-        <article class="services__item bg-darkBlue" id="radnopravo">
+        <article class="services__item bg-darkBlue" id="radnopravo" data-aos="fade-up">
             <div class="services__wrapper container">
                 <div class="services__img">
                     <img src="assets/img/services3.png" alt="services img three">
@@ -264,7 +267,7 @@
                 </div>
             </div>
         </article>
-        <article class="services__item bg-royalBlue" id="mergers">
+        <article class="services__item bg-royalBlue" id="mergers" data-aos="fade-up">
             <div class="services__wrapper container">
                 <div class="services__img">
                     <img src="assets/img/services4.png" alt="services img four">
@@ -283,7 +286,7 @@
                 </div>
             </div>
         </article>
-        <article class="services__item bg-darkBlue" id="parnicni">
+        <article class="services__item bg-darkBlue" id="parnicni" data-aos="fade-up">
             <div class="services__wrapper container">
                 <div class="services__img">
                     <img src="assets/img/services5.png" alt="services img five">
@@ -302,7 +305,7 @@
                 </div>
             </div>
         </article>
-        <article class="services__item bg-royalBlue" id="brak">
+        <article class="services__item bg-royalBlue" id="brak" data-aos="fade-up">
             <div class="services__wrapper container">
                 <div class="services__img">
                     <img src="assets/img/services6.png" alt="services img six">
@@ -369,7 +372,7 @@
 
         <!-- Main starts -->
         <div class="contact__wrapper">
-            <article class="contact__item">
+            <article class="contact__item" data-aos="fade-down">
                 <form class="contact__form">
 
                     <div class="contact__group">
@@ -396,7 +399,7 @@
                     <p class="contact__msg"></p>
                 </form>
             </article>
-            <article class="contact__item ">
+            <article class="contact__item" data-aos="fade-down">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.0845822144!2d20.470207676698713!3d44.819841476199514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7ab82895b77b%3A0x90adc5867df7547!2z0JLQtdC90LjQt9C10LvQvtGB0L7QstCwIDI5LCDQkdC10L7Qs9GA0LDQtA!5e0!3m2!1ssr!2srs!4v1721395703471!5m2!1ssr!2srs"
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -464,6 +467,12 @@
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
