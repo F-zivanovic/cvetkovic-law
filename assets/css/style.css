@@ -227,8 +227,7 @@ section {
     z-index: 999;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 2rem;
-    padding-left: 2rem;
+    padding: 2rem;
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: 0.4s linear;
     overflow: auto;
@@ -273,7 +272,6 @@ section {
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
     width: 100%;
     background-color: inherit;
-    margin: 0;
     padding-left: 1rem;
   }
 }
@@ -309,10 +307,14 @@ section {
 }
 @media (width < 1200px) {
   .nav__wrapper .nav__list #close {
-    display: flex;
     position: absolute;
     top: 1rem;
     right: 1rem;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    display: flex;
     cursor: pointer;
     font-size: 1.5rem;
   }
