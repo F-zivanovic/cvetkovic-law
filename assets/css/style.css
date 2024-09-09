@@ -144,6 +144,7 @@ section {
   left: auto;
   width: auto;
   height: auto;
+  z-index: 1000;
 }
 .fixed__btn:hover {
   background-color: white;
@@ -213,44 +214,46 @@ section {
   gap: 1rem;
   transition: 0s;
 }
-@media (width < 992px) {
+@media (width < 1200px) {
   .nav__wrapper .nav__list {
-    align-items: flex-start;
-    z-index: 100;
-    position: absolute;
-    top: 100%;
-    right: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
     bottom: auto;
-    left: 0%;
-    width: auto;
-    height: auto;
-    background-color: red;
-    width: 100%;
+    left: auto;
+    width: 250px;
+    height: 100%;
+    background-color: #C7DEF2;
+    z-index: 999;
     flex-direction: column;
-    line-height: 1.4;
-    padding: 1rem 15%;
-    gap: 1rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: 0.5s linear;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
+    transition: 0.4s linear;
   }
 }
 .nav__wrapper .nav__list.open {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
 }
 .nav__wrapper .nav__list .list__item.dropdown {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-flow: nowrap;
-  gap: 0.5rem;
+  flex-flow: wrap;
+  gap: 0.2rem;
   position: relative;
-  line-height: 1.4;
 }
 .nav__wrapper .nav__list .list__item.dropdown:hover > .nav__dropdown {
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
 }
 .nav__wrapper .nav__list .list__item.dropdown i {
   color: #061f36;
+}
+@media (width < 1200px) {
+  .nav__wrapper .nav__list .list__item.dropdown i {
+    display: none;
+  }
 }
 .nav__wrapper .nav__list .list__item.dropdown .nav__dropdown {
   margin-top: 1rem;
@@ -258,14 +261,31 @@ section {
   top: 100%;
   background-color: #061f36;
   padding: 1rem;
-  width: 220px;
-  clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+  width: 200px;
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  transition: 0s;
+}
+@media (width < 1200px) {
+  .nav__wrapper .nav__list .list__item.dropdown .nav__dropdown {
+    position: static;
+    top: auto;
+    display: block;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    width: 100%;
+    background-color: inherit;
+    margin: 0;
+    padding-left: 1rem;
+  }
 }
 .nav__wrapper .nav__list .list__item.dropdown .nav__dropdown__link {
   color: white;
   display: block;
-  width: 100%;
   text-transform: capitalize;
+}
+@media (width < 1200px) {
+  .nav__wrapper .nav__list .list__item.dropdown .nav__dropdown__link {
+    color: #061f36;
+  }
 }
 .nav__wrapper .nav__list .list__item.dropdown .nav__dropdown__link:not(:last-child) {
   margin-bottom: 1rem;
@@ -280,6 +300,26 @@ section {
 .nav__wrapper .nav__list .list__item .list__link:hover {
   color: #FF7A00;
 }
+.nav__wrapper .nav__list .list__item .list__link:hover + i {
+  color: #FF7A00;
+  transform: rotate(180deg);
+}
+.nav__wrapper .nav__list #close {
+  display: none;
+}
+@media (width < 1200px) {
+  .nav__wrapper .nav__list #close {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+}
+.nav__wrapper .nav__list #close:hover {
+  color: #FF7A00;
+}
 .nav__wrapper #hamburger {
   display: none;
   color: #061f36;
@@ -289,7 +329,7 @@ section {
 .nav__wrapper #hamburger:hover {
   color: #FF7A00;
 }
-@media (width < 992px) {
+@media (width < 1200px) {
   .nav__wrapper #hamburger {
     display: flex;
     transition: 0;

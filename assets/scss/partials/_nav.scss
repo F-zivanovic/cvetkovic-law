@@ -23,37 +23,38 @@
             @include flex(flex-start, center, row, 1rem);
             transition: 0s;
 
-            @media(width < 992px){
-                align-items: flex-start;
-                z-index: 100;
-                @include positioning(absolute, 100%, auto, auto, 0%);
-                background-color: red;
-                width: 100%;
+            @media(width < 1200px){
+                @include positioning(fixed, 0, 0, auto, auto, 250px, 100%);
+                background-color: $lightBlue;
+                z-index: 999;
                 flex-direction: column;
-                line-height: 1.4;
-                padding: 1rem 15%;
-                gap: 1rem;
-                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                transition: .5s linear;
+                align-items: flex-start;
+                padding-top: 2rem;
+                padding-left: 2rem;
+                clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
+                transition: .4s linear
             }
 
             &.open{
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+                clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
             }
-
+            
             .list__item{
 
                 &.dropdown{
-                    @include flex(flex-start, center, nowrap, .5rem);
+                    @include flex(flex-start, center, wrap, .2rem);
                     position: relative;
-                    line-height: 1.4;
 
                     &:hover > .nav__dropdown{
-                        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+                        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
                     }
 
                     i{
                         color: $darkBlue;
+
+                        @media(width < 1200px){
+                            display: none;
+                        }
                     }
 
                     .nav__dropdown{
@@ -62,14 +63,29 @@
                         top: 100%;
                         background-color: $darkBlue;
                         padding: 1rem;
-                        width: 220px;
-                        clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+                        width: 200px;
+                        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+                        transition: 0s;
+
+                        @media(width < 1200px){
+                            position: static;
+                            top: auto;
+                            display: block;
+                            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+                            width: 100%;
+                            background-color: inherit;
+                            margin: 0;
+                            padding-left: 1rem;
+                        }
 
                         &__link{
                             color: white;
                             display: block;
-                            width: 100%;
                             text-transform: capitalize;
+
+                            @media(width < 1200px){
+                                color: $darkBlue;
+                            }
 
                             &:not(:last-child){
                                 margin-bottom: 1rem;
@@ -90,6 +106,27 @@
                         color: $orange;
                     }
 
+                    &:hover + i{
+                        color: $orange;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            #close{
+                display: none;
+
+                @media(width < 1200px){
+                    display: flex;
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    cursor: pointer;
+                    font-size: 1.5rem;
+                }
+
+                &:hover{
+                    color: $orange;
                 }
             }
         }
@@ -104,7 +141,7 @@
                 color: $orange;
             }
 
-            @media(width < 992px){
+            @media(width < 1200px){
                 display: flex;
                 transition: 0;
             }
