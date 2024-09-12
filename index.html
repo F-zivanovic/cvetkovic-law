@@ -44,14 +44,14 @@
     <!-- Top nav section starts -->
     <div class="topnav">
         <div class="topnav__wrapper container">
-            <article class="topnav__item">
+            <div class="topnav__item">
                 <i class="fa-solid fa-location-dot"></i>
                 <span>Venizelosova 29, Novi Dorćol, Beograd</span>
-            </article>
-            <article class="topnav__item">
+            </div>
+            <div class="topnav__item">
                 <i class="fa-solid fa-envelope"></i>
                 <a href="mailto:ivana@cvetkoviclaw.rs">ivana@cvetkoviclaw.rs</a>
-            </article>
+            </div>
         </div>
     </div>
     <!-- Top nav section ends -->
@@ -112,7 +112,7 @@
             <p>Mi nudimo drugačiji pristup i efikasniju pravnu zaštitu</p>
             <div class="hero__cta">
                 <i class="fa-solid fa-arrow-right"></i>
-                <a href="#" class="hero__btn">Zakažite konsultacije</a>
+                <a href="#cta" class="hero__btn">Zakažite konsultacije</a>
             </div>
         </div>
     </section>
@@ -156,10 +156,12 @@
 
     <!-- About section starts -->
     <section class="about container" id="about">
-        <article class="about__item" data-aos="zoom-in" data-aos-duration="1000">
-            <h2 class="section__title">o nama</h2>
+        <div class="about__item" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="about__heading section__title">o nama</h2>
             <h3>Reč osnivača</h3>
-            <p>Na samo početku ideja naše kancelarije je bila da uz poštovaje visokih standarda i pravne etike postanemo
+            <p class="about__p">Na samom početku ideja naše kancelarije je bila da uz poštovaje visokih standarda i
+                pravne etike
+                postanemo
                 vodeća
                 kacelarija u Beogradu, te da nas klijenti po ta dva kriterijuma razlikuju od drugih kancelarija. Kako je
                 vreme
@@ -168,39 +170,30 @@
                 jednako postojano držimo, a svakim danom postavljamo sve više i više standarde, koje naši klijenti
                 prepoznaju i zbog
                 kojih nam, u sve većem broju, ukazuju poverenje.</p>
-            <p>Advokatska kancelarija Cvetkovic Law je visoko profesionalna advokatska kancelarija koja je u mogućnosti
+
+            <p class="about__p">Advokatska kancelarija Cvetkovic Law je visoko profesionalna advokatska kancelarija koja
+                je u mogućnosti
                 da na najbolji
                 reši sve vaše pravne probleme. Naš tim mladih i ambicioznih advokata stoji vam na usluzi i u svakom
                 trenutku je spreman
                 da sva svoja znanja i sposobnosti usmeri na pouzdano, brzo i povoljno rešenje svih vaših pravnih
                 nedoumica. Visok nivo
                 odgovornosti, kao i profesionalne etike, je ono po čemu nas klijenti prepoznaju i vrlo rado preporučuju.
-            </p>
-            <p>Cvetkovic Law posluje već deset godina na tržištu i ono što našu kancelariju izdvaja od ostalih je visok
-                profesionalni
-                nivo advokatskih usluga, posvećenost svakom klijentu, kao i efikasan i brz način pronalaženja najboljih
-                poslovnih
-                rešenja.</p>
+            </p class="about__p">
 
-            <p>Advokat Ivana Cvetković, kao osnivač advokatske kancelarije, izučavala je pravo i pravni sistem na
+
+            <p class="about__p">Advokat Ivana Cvetković, kao osnivač advokatske kancelarije, izučavala je pravo i pravni
+                sistem na
                 Pravnom fakultetu
                 Univerziteta u Beogradu, da bi kasnije kroz praksu učila i edukovala se u najboljim advokatskim
                 kancelarijama u Srbiji.
                 Završila je master iz Prava Intelektualne svojine, da bi svoje znanje još više proširila te edukaciju
                 nastavila u
                 oblasti Arbitraže i to na jednom od najprestižnijih univerziteta u Londonu</p>
-
-            <p>Posvećena je timu i uvek otvorena za nova znanja i izazove. Od tima uvek traži kreativna rešenja, ali i
-                sama učestvuje u
-                pronalaženju najpovoljnijeg rešenja za svoje klijente. Važno nam je zadovoljstvo klijenta, zato ćemo se
-                truditi da i u
-                narednim godinama našim starim i novim klijentima pružimo samo najbolju uslugu na vrhunskom nivou te
-                nastaviti da budemo
-                posvećeni svom poslu i kreativni u nalaženju najboljih rešenja za naše klijente.</p>
-        </article>
-        <article class="about__item about__item--img" data-aos="zoom-in" data-aos-duration="1000">
-            <img src="assets/img/ivana.png" alt="Ivana Cvetkovic">
-        </article>
+        </div>
+        <div class="about__item about__item--img" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="assets/img/ivana.png" alt="Ivana Cvetkovic image" class="about__img" width="100%" height="100%">
+        </div>
     </section>
     <!-- About section ends -->
 
@@ -236,15 +229,20 @@
                 </div>
                 <div class="services__text">
                     <h2 class="section__title">medijacija</h2>
-                    <p>Arbitraža, kao način rešavanja sporova, je sve prisutnija u savremenom svetu. Imjući u vidu da
-                        sudski postupci predugo traju, kao i činjenicu da poverilac nije siguran da li će, usled dužine
-                        sudskog spora, uspeti da se naplati od strane dužnika, arbitraža zauzima sve više mesto u
-                        postupku rešavanja sporova. Prednosti arbitraže su brzo rešenje spora kao i izvesnost u naplati,
-                        te stoga savremeni način života sve više upućuje na ovakav način suđenja. Svejedno da li je
-                        domaća ili inostrana, Cvetkovic law vam može pružiti najkvalitetniju i najefikasniju pravnu
-                        zaštitu, te savetovanje u arbitraži, imajući u vidu da se deo naše kancelarije upravo
-                        specijalizovao za arbitražu i to na jednom od najprestižnijih univerziteta u Evropi, a koji je
-                        specijalizovan upravo za rešavanje sporova putem arbitraže. </p>
+                    <p>Medijacija, kao manje formalan način rešavanja sporova, je takođe sve više prisutna u savremenom
+                        društvu. U određenim situacijama je potrebno da strankama ukažemo koje je najbolje rešenje za
+                        njih i da kroz razgovor pokušamo da stavimo do znanja da postoji najefiksniji način da se spor
+                        reši.
+
+                        Medijacija je postupak mirnog vansudskog rešenja spornog odnosa u kojem strane dobrovoljno
+                        nastoje da reše spor putem pregovaranja uz pomoć jednog ili više posrednika-medijatora, koji kao
+                        treće neutralno i nepristrasno lice, pomaže u pregovorima čiji je cilj postizanje zajedničkog
+                        prihvatljivog sporazuma o rešavanju nastalog spora. U odnosu na sudski spor medijacija je brži,
+                        efikasniji i jeftiniji postupak.
+
+                        Medijator nije sudija već lice koje je upisano u Registrar medijatora koji vodi Ministarstvo
+                        pravde. Cvetkovic law ima registrovane medijatore te vam u ovom postupku možemo pomoći da
+                        ostvarite najbolje interese u spornom odnosu. </p>
                 </div>
             </div>
         </article>
@@ -255,15 +253,13 @@
                 </div>
                 <div class="services__text">
                     <h2 class="section__title">radno pravo</h2>
-                    <p>Arbitraža, kao način rešavanja sporova, je sve prisutnija u savremenom svetu. Imjući u vidu da
-                        sudski postupci predugo traju, kao i činjenicu da poverilac nije siguran da li će, usled dužine
-                        sudskog spora, uspeti da se naplati od strane dužnika, arbitraža zauzima sve više mesto u
-                        postupku rešavanja sporova. Prednosti arbitraže su brzo rešenje spora kao i izvesnost u naplati,
-                        te stoga savremeni način života sve više upućuje na ovakav način suđenja. Svejedno da li je
-                        domaća ili inostrana, Cvetkovic law vam može pružiti najkvalitetniju i najefikasniju pravnu
-                        zaštitu, te savetovanje u arbitraži, imajući u vidu da se deo naše kancelarije upravo
-                        specijalizovao za arbitražu i to na jednom od najprestižnijih univerziteta u Evropi, a koji je
-                        specijalizovan upravo za rešavanje sporova putem arbitraže. </p>
+                    <p>Radno parvo, kao grana prava, je definisana zakonskim pozitivnim propisima. Međutim, u velikom
+                        broju situacija se dešava da se pojave neke sporne situacije u radnom odnosu, koje su vezane za
+                        bolovanje, odmore, odsustva ili otkaz ugovora radnicima, te je neophodno da se propisi tačno
+                        protumače, te da se u skladu sa tim da^ relevantno pravno mišljenje koje će biti usklađeno sa
+                        postojećim zakonom. Vrlo često dobijamo upite kako od poslodavaca tako i od radnika o pitanjima
+                        vezanim za različite nedoumice iz radnog prava. Do sada smo sva pitanja uspešno rešili i pomogli
+                        zaposlenima da ostvare sva prava koja su im pozitivnim propisima garantovana. </p>
                 </div>
             </div>
         </article>
@@ -274,15 +270,15 @@
                 </div>
                 <div class="services__text">
                     <h2 class="section__title">mergers & acquisitions</h2>
-                    <p>Arbitraža, kao način rešavanja sporova, je sve prisutnija u savremenom svetu. Imjući u vidu da
-                        sudski postupci predugo traju, kao i činjenicu da poverilac nije siguran da li će, usled dužine
-                        sudskog spora, uspeti da se naplati od strane dužnika, arbitraža zauzima sve više mesto u
-                        postupku rešavanja sporova. Prednosti arbitraže su brzo rešenje spora kao i izvesnost u naplati,
-                        te stoga savremeni način života sve više upućuje na ovakav način suđenja. Svejedno da li je
-                        domaća ili inostrana, Cvetkovic law vam može pružiti najkvalitetniju i najefikasniju pravnu
-                        zaštitu, te savetovanje u arbitraži, imajući u vidu da se deo naše kancelarije upravo
-                        specijalizovao za arbitražu i to na jednom od najprestižnijih univerziteta u Evropi, a koji je
-                        specijalizovan upravo za rešavanje sporova putem arbitraže. </p>
+                    <p>Mergers & Aqusitions ili skraćeno M&A je postupak spajanja i pripajanja ili spajanja i
+                        preuzimanja dva privredna društva. Dakle, u situaciji kada jedno privredno društvo želi da kupi
+                        drugo ili da se konsoliduje, odnosno pripoji drugom privrednom društvu, sprovodi se postupak
+                        akvizicije.
+
+                        U ovakvoj vrsti postupka je neophodno da se proveri celokupna imovina društva koje se kupuje, te
+                        da se sprovede pravna analiza navedenog društva, da se utvrde sudski postupci koje društvo vodi,
+                        kao i koju imovinu društvo poseduje. Ovo je zahtevan i ne baš jednostavan proces, u kome vam
+                        Cvetkovic law rado može pomoći. </p>
                 </div>
             </div>
         </article>
@@ -292,16 +288,18 @@
                     <img src="assets/img/services5.png" alt="services img five">
                 </div>
                 <div class="services__text">
-                    <h2 class="section__title">krivični postupak</h2>
-                    <p>Arbitraža, kao način rešavanja sporova, je sve prisutnija u savremenom svetu. Imjući u vidu da
-                        sudski postupci predugo traju, kao i činjenicu da poverilac nije siguran da li će, usled dužine
-                        sudskog spora, uspeti da se naplati od strane dužnika, arbitraža zauzima sve više mesto u
-                        postupku rešavanja sporova. Prednosti arbitraže su brzo rešenje spora kao i izvesnost u naplati,
-                        te stoga savremeni način života sve više upućuje na ovakav način suđenja. Svejedno da li je
-                        domaća ili inostrana, Cvetkovic law vam može pružiti najkvalitetniju i najefikasniju pravnu
-                        zaštitu, te savetovanje u arbitraži, imajući u vidu da se deo naše kancelarije upravo
-                        specijalizovao za arbitražu i to na jednom od najprestižnijih univerziteta u Evropi, a koji je
-                        specijalizovan upravo za rešavanje sporova putem arbitraže. </p>
+                    <h2 class="section__title">parnični postupak</h2>
+                    <p>Cvetkovic law je, kao advokatska kancelarija, specijalizovana za sve vrste parničnih sporova,
+                        imajući u vidu da se više od deset godina bavimo prevashodno parničnim pravom. Parnični postupci
+                        su najsloženiji građanski postupci, jer mogu proizilaziti iz najrazličitijih odnosa parničnih
+                        stranaka. U ovim postupcima se, osim Zakona o parničnom postupku, koji procesno uređuje ovaj
+                        postupak, može naći niz najrazličitijih zakona koje regulišu najrazličitije odnose parničnih
+                        strana. Iz tog razoga, punomoćnici stranaka bi trebalo da budu vrlo dobro upoznati sa celokupnim
+                        pozitivnim pravom Republike Srbije koji reguliše građansku materiju, , kako bi na najbolji
+                        mogući način strankama pružili pravnu zaštitu. Imajući u vidu da se Cvetkovic Law čitavu
+                        deceniju bavi prevashodno zastupanjem u parničnim postupcima, naš savet i podrška u vašoj
+                        sudskoj borbi vam mogu puno pomoći i omoćućiti da ostvarite sva prava koja u sudskim postupcima
+                        zahtevate.</p>
                 </div>
             </div>
         </article>
@@ -312,15 +310,12 @@
                 </div>
                 <div class="services__text">
                     <h2 class="section__title">razvod braka</h2>
-                    <p>Arbitraža, kao način rešavanja sporova, je sve prisutnija u savremenom svetu. Imjući u vidu da
-                        sudski postupci predugo traju, kao i činjenicu da poverilac nije siguran da li će, usled dužine
-                        sudskog spora, uspeti da se naplati od strane dužnika, arbitraža zauzima sve više mesto u
-                        postupku rešavanja sporova. Prednosti arbitraže su brzo rešenje spora kao i izvesnost u naplati,
-                        te stoga savremeni način života sve više upućuje na ovakav način suđenja. Svejedno da li je
-                        domaća ili inostrana, Cvetkovic law vam može pružiti najkvalitetniju i najefikasniju pravnu
-                        zaštitu, te savetovanje u arbitraži, imajući u vidu da se deo naše kancelarije upravo
-                        specijalizovao za arbitražu i to na jednom od najprestižnijih univerziteta u Evropi, a koji je
-                        specijalizovan upravo za rešavanje sporova putem arbitraže. </p>
+                    <p>Razvod braka je jedan od najtežih trenutaka kako za roditelje tako i za decu. Zato su članovi
+                        našeg tima specijalizovani za prava deteta i u skladu sa tim uvek vode računa o najboljim
+                        intetresima dece u postupku razvoda braka. Uvek pokušavamo da postupak razvoda braka završimo na
+                        najbrži, najefikasniji i najbezbolniji način za sve strane u sporu, a posebno za decu, te naše
+                        iskustvo, profesionalizam i briga o deci, govore zašto nas ljudi biraju i preporučuju u njihovim
+                        najtežim trenucima. </p>
                 </div>
             </div>
         </article>
@@ -334,10 +329,9 @@
     <!-- CTA section starts -->
     <section class="cta" id="cta">
         <div class="cta__wrapper container">
-            <h2 class="cta__heading">zakažite besplatne online konsultacije danas</h2>
-            <p class="cta__p">Naši stručnjaci su tu da vam pomognu. Bez
-                obaveza i
-                potpuno besplatno, možete zakazati sastanak koji odgovara vašem rasporedu.</p>
+            <h2 class="cta__heading">zakažite online konsultacije danas</h2>
+            <p class="cta__p">Naši stručnjaci su tu da vam pomognu. Možete zakazati sastanak koji odgovara vašem
+                rasporedu.</p>
             <a href="#" class="cta__btn btn">zakažite konsultacije</a>
         </div>
     </section>
@@ -377,17 +371,17 @@
 
                     <div class="contact__group">
                         <label for="name">Ime*</label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" required>
                     </div>
 
                     <div class="contact__group">
                         <label for="email">Email*</label>
-                        <input type="text" id="email">
+                        <input type="text" id="email" required>
                     </div>
 
                     <div class="contact__group">
                         <label for="subject">Naslov*</label>
-                        <input type="text" id="subject">
+                        <input type="text" id="subject" required>
                     </div>
 
                     <div class="contact__group">
@@ -395,7 +389,7 @@
                         <textarea id="message"></textarea>
                     </div>
 
-                    <button class="contact__submit btn" type="submit">Pošalji</button>
+                    <button class="contact__submit btn" type="submit">Pošaljite</button>
                     <p class="contact__msg"></p>
                 </form>
             </article>
@@ -462,7 +456,7 @@
 
 
     <!-- Fixed btn -->
-    <a href="#" class="fixed__btn">besplatne konsultacije</a>
+    <a href="#" class="fixed__btn">online konsultacije</a>
 
 
     <!-- Custom JS -->
