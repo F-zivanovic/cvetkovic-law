@@ -28,6 +28,7 @@ body{
 h1,h2,h3,h4,h5,h6{
     text-transform: capitalize;
     font-family: "Barlow Semi Condensed", sans-serif;
+    text-wrap: balance;
 }
 
 .container{
@@ -48,6 +49,7 @@ img{
 section{
     padding: 70px 0;
 }
+
 
 .section__title{
     color: $orange;
