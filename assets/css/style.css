@@ -786,10 +786,10 @@ section {
 .footer__wrapper .footer__item .footer__list__item i {
   margin-right: 1rem;
 }
-.footer__wrapper .footer__item .footer__list__item a, .footer__wrapper .footer__item .footer__list__item span {
+.footer__wrapper .footer__item .footer__list__item a {
   color: white;
 }
-.footer__wrapper .footer__item .footer__list__item a:hover, .footer__wrapper .footer__item .footer__list__item span:hover {
+.footer__wrapper .footer__item .footer__list__item a:hover {
   color: #FF7A00;
 }
 .footer__wrapper .footer__item .footer__list__item .footer__link {
