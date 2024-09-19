@@ -61,4 +61,12 @@ function validateContactForm(userData){
 }
 
 
+// Dynamic date
+getYear();
+
+function getYear() {
+    let copy = document.getElementById('date');
+    let date = new Date();
+    copy.innerHTML = date.getFullYear();
+}
 

@@ -742,7 +742,7 @@ section {
 }
 
 .footer {
-  padding: 70px 0;
+  padding-top: 70px;
   background-color: #061f36;
 }
 .footer__wrapper {
@@ -751,6 +751,7 @@ section {
   align-items: flex-start;
   flex-flow: wrap;
   gap: 2rem;
+  margin-bottom: 70px;
 }
 @media (width < 992px) {
   .footer__wrapper {
@@ -794,6 +795,17 @@ section {
 }
 .footer__wrapper .footer__item .footer__list__item .footer__link {
   text-transform: capitalize;
+}
+.footer__copy {
+  text-align: center;
+  padding: 1.2rem 0;
+  border-top: 1px solid #C7DEF2;
+}
+.footer__copy p {
+  color: #fff;
+}
+.footer__copy p a {
+  color: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
