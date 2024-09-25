@@ -70,7 +70,7 @@
 
     &__copy{
         text-align: center;
-        padding: 1.2rem 0;
+        padding: 1rem 0;
         border-top: 1px solid $lightBlue;
 
         p{
@@ -78,6 +78,7 @@
 
             a{
                 color: inherit;
+                text-decoration: underline;
             }
         }
     }
