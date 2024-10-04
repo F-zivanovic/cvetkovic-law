@@ -59,6 +59,7 @@ PARTIALS
   border: none;
   outline: none;
   transition: 0.4s linear;
+  resize: none;
 }
 
 body {
