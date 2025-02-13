@@ -1,0 +1,1 @@
+- focusable elements such as links and inputs, buttons field are given special styling by the browser by default 
