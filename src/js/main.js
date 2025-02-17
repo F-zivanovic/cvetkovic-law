@@ -21,39 +21,30 @@ window.addEventListener("resize", () => {
 });
 
 // Form validation
-const sumbitBtn = document.querySelector(".contact__submit");
-const contactForm = document.querySelector(".contact__form");
-const contactMsg = contactForm.querySelector(".contact__msg");
+const contactForm = document.getElementById("contactForm");
 
-sumbitBtn.addEventListener("click", collectUserData);
+contactForm.addEventListener("submit", (e) => {
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let subject = document.getElementById("subject").value.trim();
+  let message = document.getElementById("message").value.trim();
 
-function collectUserData(e) {
-  e.preventDefault();
+  let errorMessage = "";
 
-  const inputs = contactForm.querySelectorAll("input");
-
-  const userData = {
-    name: inputs[0].value,
-    email: inputs[1].value,
-    message: inputs[2].value,
-  };
-
-  validateContactForm(userData);
-}
-
-function validateContactForm(userData) {
-  if (userData.name == "" || userData.email == "" || userData.message == "") {
-    contactMsg.innerHTML = "Sva polja forme su obavezna";
-    return;
+  if (!name || !email || !subject || !message) {
+    errorMessage = "Molimo popunite sva polja.";
   }
 
-  let emailFormat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!userData.email.match(emailFormat)) {
-    contactMsg.innerHTML = "Unesite validan email";
-  } else {
-    contactMsg.innerHTML = "Forma je uspešno poslata. Očekujte odgovor!";
+  let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    errorMessage = "Unesite validan email.";
   }
-}
+
+  if (errorMessage) {
+    e.preventDefault();
+    document.querySelector(".contact__msg").innerHTML = errorMessage;
+  }
+});
 
 // Consultation BTN
 const consultationBtn = document.querySelector(

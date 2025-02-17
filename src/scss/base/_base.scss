@@ -46,11 +46,11 @@ section {
   padding: 70px 0;
 }
 
-a:focus {
+a:focus,
+a:hover {
   color: $orange;
 }
 
-a,
-i {
+a {
   transition: 0.4s linear;
 }

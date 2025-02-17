@@ -93,12 +93,12 @@ section {
   padding: 70px 0;
 }
 
-a:focus {
+a:focus,
+a:hover {
   color: #ff7a00;
 }
 
-a,
-i {
+a {
   transition: 0.4s linear;
 }
 
@@ -168,6 +168,35 @@ i {
 .calc__p {
   margin: 1rem 0;
   font-size: 1.3rem;
+}
+
+.table table {
+  width: 100%;
+}
+.table table th {
+  background-color: #ff7a00;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 17px;
+}
+.table table td {
+  font-size: 15px;
+  padding: 10px;
+}
+
+table {
+  margin-top: 3rem;
+  color: #fff;
+}
+
+table, th, td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 7px 0;
 }
 
 .btn {
@@ -250,9 +279,6 @@ i {
 .topnav__link {
   color: #fff;
 }
-.topnav__link:hover {
-  color: #ff7a00;
-}
 .topnav__icon {
   color: #ff7a00;
   margin-right: 7px;
@@ -270,18 +296,34 @@ i {
   flex-flow: row nowrap;
   gap: 0;
 }
-.nav__wrapper #hamburger {
+.nav__wrapper #hamburger,
+.nav__wrapper #close {
+  font-size: 1.5rem;
+  color: #061f36;
   display: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  transition: 0.4s linear;
+}
+.nav__wrapper #hamburger:hover,
+.nav__wrapper #close:hover {
+  color: #ff7a00;
 }
 @media (max-width: 1300px) {
-  .nav__wrapper #hamburger {
+  .nav__wrapper #hamburger,
+  .nav__wrapper #close {
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  .nav__wrapper #close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     display: block;
   }
 }
 .nav__logo img {
-  width: 250px;
+  width: 270px;
   height: 80px;
 }
 @media (max-width: 576px) {
@@ -317,19 +359,6 @@ i {
 }
 .nav__list.open {
   clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-}
-.nav__list #close {
-  display: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
-@media (max-width: 1200px) {
-  .nav__list #close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: block;
-  }
 }
 .nav__item--dropdown {
   position: relative;
@@ -371,9 +400,6 @@ i {
   color: #fff;
   text-transform: capitalize;
 }
-.nav__dropdown__link:hover {
-  color: #ff7a00;
-}
 @media (max-width: 1300px) {
   .nav__dropdown__link {
     color: #061f36;
@@ -383,27 +409,12 @@ i {
   color: #061f36;
   text-transform: capitalize;
 }
-.nav__link:hover {
-  color: #ff7a00;
-}
 .nav__link--dropdown {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-flow: row;
   gap: 5px;
-}
-.nav__hamburger {
-  color: #061f36;
-}
-.nav__hamburger:hover {
-  color: #ff7a00;
-}
-@media (max-width: 1200px) {
-  .nav__hamburger {
-    display: flex;
-    transition: 0;
-  }
 }
 
 .hero {
@@ -412,26 +423,17 @@ i {
   align-items: center;
   flex-flow: column;
   gap: 0;
+  color: #fff;
   height: 700px;
   background-image: linear-gradient(rgba(10, 45, 78, 0.6), rgba(10, 45, 78, 0.6)), url("../../src/img/hero__bg.webp");
   background-position: center;
   background-size: cover;
   text-align: center;
-  color: #fff;
-}
-.hero--services {
-  background-color: #061f36;
-  height: auto;
-  background-attachment: fixed;
-}
-.hero--sm {
-  background-attachment: fixed;
-  height: 350px;
 }
 .hero__lawyer {
+  color: #ff7a00;
   font-size: clamp(1.5rem, 5vw, 2.3rem);
   margin-bottom: 1rem;
-  color: #ff7a00;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -459,14 +461,14 @@ i {
   box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .hero__btn {
+  color: #fff;
+  background: #0a2d4e;
   margin-left: -25px;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 26px;
-  color: #fff;
-  background: #0a2d4e;
   position: relative;
   border-radius: 0px 5px 5px 0px;
   z-index: 4;
@@ -475,6 +477,15 @@ i {
 .hero__btn:hover {
   background-color: #ff7a00;
   color: #fff;
+}
+.hero--services {
+  background-color: #061f36;
+  height: auto;
+  background-attachment: fixed;
+}
+.hero--sm {
+  background-attachment: fixed;
+  height: 350px;
 }
 
 .contact__header {
@@ -618,8 +629,8 @@ i {
   font-size: 1.5rem;
 }
 .footer__list {
-  margin-top: 1.5rem;
   color: #fff;
+  margin-top: 1.5rem;
 }
 .footer__list__item:not(:last-child) {
   margin-bottom: 1rem;
@@ -706,12 +717,29 @@ i {
   color: #fff;
   font-weight: 500;
   font-size: 1.3rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 @media (max-width: 576px) {
   .consultation__description {
     font-size: 1rem;
   }
+}
+.consultation__list {
+  color: #fff;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.consultation__icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+.consultation__icon--red {
+  color: red;
+}
+.consultation__icon--green {
+  color: green;
 }
 .consultation .calendly-inline-widget {
   width: 100%;
@@ -730,8 +758,8 @@ i {
   }
 }
 .service__p {
-  font-size: 1.1rem;
   color: #fff;
+  font-size: 1.1rem;
   line-height: 2;
   margin-top: 2rem;
   text-align: justify;
@@ -777,8 +805,8 @@ i {
   }
 }
 .about .about__p {
-  margin-top: 1rem;
   color: #fff;
+  margin-top: 1rem;
   line-height: 2;
   text-align: justify;
 }

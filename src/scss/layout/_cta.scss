@@ -15,10 +15,31 @@
     color: $white;
     font-weight: 500;
     font-size: 1.3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     @include rwd(576) {
       font-size: 1rem;
+    }
+  }
+
+  &__list{
+    color: $white;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__icon{
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+
+    &--red{
+      color: red;
+    }
+
+    &--green{
+      color: green;
     }
   }
 
