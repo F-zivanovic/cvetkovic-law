@@ -113,7 +113,7 @@ a {
   transform: translateX(300px);
   font-size: 14px;
   background-color: #ff7a00;
-  color: #fff;
+  color: #061f36;
   padding: 1rem;
   text-transform: capitalize;
   font-weight: bold;
@@ -121,7 +121,7 @@ a {
   z-index: 1000;
 }
 .fixed__btn:hover {
-  color: #061f36;
+  color: #c7def2;
 }
 .fixed__btn.active {
   transform: translateX(0);
@@ -833,7 +833,6 @@ table td {
 }
 .feature__item--orange {
   background-color: #ff7a00;
-  color: #fff;
   flex: 2;
   font-weight: 500;
 }
